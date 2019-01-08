@@ -1,0 +1,9 @@
+version: '2'
+services:
+  app:
+    build: .
+    command: revel run sample-revel-docker
+    ports:
+      - 9000:9000
+    volumes:
+      - .:/go/src/sample-revel-docker
